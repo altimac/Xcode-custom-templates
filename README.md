@@ -8,7 +8,7 @@ Today, I'm also a Cocoa trainer and I can't explain Storyboards, Autolayout, NSV
 Various Xcode custom templates, targeting minimalistic content (No Storyboard, No Autolayout...) used for my trainings.
 
 # Mac application template:
-# Install in `~/Library/Developer/Xcode/Templates/Project Templates/Mac/Application/`
+Install in `~/Library/Developer/Xcode/Templates/Project Templates/Mac/Application/`
 - No default Storyboard (use MainMenu.xib instead)
 - No Autolayout set by default
 - A mininimal AppDelegate implementation (with a property for the main window)
