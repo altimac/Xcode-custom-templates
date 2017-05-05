@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.cocoaApplication_FORMATION_OBJC+SWIFT</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.cocoaApplicationBase</string>
+		<string>com.apple.dt.unit.languageChoice</string>
+	</array>
+	<key>Project</key>
+	<dict/>
+	<key>Nodes</key>
+	<array>
+		<string>Base.lproj/MainMenu.xib</string>
+		<string>Info.plist:MainNib</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>Base.lproj/MainMenu.xib</key>
+		<dict>
+			<key>Path</key>
+			<string>MainMenu.xib</string>
+			<key>SortOrder</key>
+			<integer>101</integer>
+		</dict>
+		<key>Info.plist:MainNib</key>
+		<string>&lt;key&gt;NSMainNibFile&lt;/key&gt;
+            &lt;string&gt;MainMenu&lt;/string&gt;
+        </string>
+	</dict>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>AppDelegate.h:comments</string>
+						<string>AppDelegate.h:imports:importCocoa</string>
+						<string>AppDelegate.h:interface</string>
+						<string>AppDelegate.m:comments</string>
+						<string>AppDelegate.m:imports:importHeader:AppDelegate.h</string>
+						<string>AppDelegate.m:extension</string>
+						<string>AppDelegate.m:implementation:methods:applicationDidFinishLaunching(- (void\)applicationDidFinishLaunching:(NSNotification *\)aNotification)</string>
+						<string>AppDelegate.m:implementation:methods:applicationDidFinishLaunching:comments</string>
+						<string>AppDelegate.m:implementation:methods:applicationWillTerminate(- (void\)applicationWillTerminate:(NSNotification *\)aNotification)</string>
+						<string>AppDelegate.m:implementation:methods:applicationWillTerminate:comments</string>
+						<string>main.m:comments</string>
+						<string>main.m:imports:importCocoa</string>
+						<string>main.m:main:NSApplicationMain</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>AppDelegate.h:interface</key>
+						<string>@interface AppDelegate : NSObject &lt;NSApplicationDelegate&gt;
+
+@property (weak) IBOutlet NSWindow *window;
+
+@end</string>
+						<key>AppDelegate.m:implementation:methods:applicationDidFinishLaunching:comments</key>
+						<string>// Insert code here to initialize your application</string>
+						<key>AppDelegate.m:implementation:methods:applicationWillTerminate:comments</key>
+						<string>// Insert code here to tear down your application</string>
+					</dict>
+				</dict>
+				<key>Swift</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>AppDelegate.swift:comments</string>
+						<string>AppDelegate.swift:imports:importCocoa</string>
+						<string>AppDelegate.swift:NSApplicationMain</string>
+						<string>AppDelegate.swift:implementation(AppDelegate: NSObject, NSApplicationDelegate)</string>
+						<string>AppDelegate.swift:implementation:properties</string>
+						<string>AppDelegate.swift:implementation:methods:applicationDidFinishLaunching(func applicationDidFinishLaunching(_ aNotification: Notification\))</string>
+						<string>AppDelegate.swift:implementation:methods:applicationDidFinishLaunching:comments</string>
+						<string>AppDelegate.swift:implementation:methods:applicationWillTerminate(func applicationWillTerminate(_ aNotification: Notification\))</string>
+						<string>AppDelegate.swift:implementation:methods:applicationWillTerminate:comments</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>AppDelegate.swift:NSApplicationMain</key>
+						<string>@NSApplicationMain</string>
+						<key>AppDelegate.swift:implementation:properties</key>
+						<string>@IBOutlet weak var window: NSWindow!
+
+</string>
+						<key>AppDelegate.swift:implementation:methods:applicationDidFinishLaunching:comments</key>
+						<string>// Insert code here to initialize your application</string>
+						<key>AppDelegate.swift:implementation:methods:applicationWillTerminate:comments</key>
+						<string>// Insert code here to tear down your application</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Concrete</key>
+	<true/>
+</dict>
+</plist>
