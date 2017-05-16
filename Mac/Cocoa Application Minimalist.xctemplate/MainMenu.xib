@@ -19,6 +19,9 @@
                         <items>
                             <menuItem title="About MyApp" id="58">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="nz9-CI-4WX"/>
+                                </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="236">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
@@ -52,7 +55,11 @@
                             <menuItem isSeparatorItem="YES" id="149">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Quit MyApp" keyEquivalent="q" id="136"/>
+                            <menuItem title="Quit MyApp" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="ALI-4u-u8o"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </menuItem>
