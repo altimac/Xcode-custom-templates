@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.cocoaApplicationStoryboardCHOOSABLE</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.cocoaApplicationNativeBase</string>
+	</array>
+	<key>Project</key>
+	<dict/>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>storyboardBased</string>
+			<key>Name</key>
+			<string>Use Storyboards</string>
+			<key>Description</key>
+			<string>Whether the application should be Storyboard-based</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Nodes</key>
+						<array>
+							<string>Base.lproj/Main.storyboard</string>
+							<string>Info.plist:MainNib</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>Base.lproj/Main.storyboard</key>
+							<dict>
+								<key>Path</key>
+								<string>Main.storyboard</string>
+								<key>SortOrder</key>
+								<integer>101</integer>
+							</dict>
+							<key>Info.plist:MainNib</key>
+							<string>&lt;key&gt;NSMainStoryboardFile&lt;/key&gt;
+                                &lt;string&gt;Main&lt;/string&gt;
+                            </string>
+						</dict>
+					</dict>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Objective-C</string>
+							<key>storyboardBased</key>
+							<string>true</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>ViewController.h:comments</string>
+							<string>ViewController.h:imports:importCocoa</string>
+							<string>ViewController.h:interface(ViewController : NSViewController)</string>
+							<string>ViewController.m:comments</string>
+							<string>ViewController.m:imports:importHeader:ViewController.h</string>
+							<string>ViewController.m:implementation:methods:viewDidLoad(- (void\)viewDidLoad)</string>
+							<string>ViewController.m:implementation:methods:viewDidLoad:code</string>
+							<string>ViewController.m:implementation:methods:setRepresentedObject(- (void\)setRepresentedObject:(id\)representedObject)</string>
+							<string>ViewController.m:implementation:methods:setRepresentedObject:code</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>ViewController.m:implementation:methods:viewDidLoad:code</key>
+							<string>[super viewDidLoad];
+
+// Do any additional setup after loading the view.</string>
+							<key>ViewController.m:implementation:methods:setRepresentedObject:code</key>
+							<string>[super setRepresentedObject:representedObject];
+
+// Update the view, if already loaded.</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Swift</string>
+							<key>storyboardBased</key>
+							<string>true</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>ViewController.swift:comments</string>
+							<string>ViewController.swift:imports:importCocoa</string>
+							<string>ViewController.swift:implementation(ViewController: NSViewController)</string>
+							<string>ViewController.swift:comments</string>
+							<string>ViewController.swift:implementation:methods:viewDidLoad(override func viewDidLoad(\))</string>
+							<string>ViewController.swift:implementation:methods:viewDidLoad:code</string>
+							<string>ViewController.swift:implementation:methods:representedObject(override var representedObject: AnyObject?)</string>
+							<string>ViewController.swift:implementation:methods:representedObject:body</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>ViewController.swift:implementation:methods:viewDidLoad:code</key>
+							<string>super.viewDidLoad()
+
+// Do any additional setup after loading the view.</string>
+							<key>ViewController.swift:implementation:methods:representedObject:body</key>
+							<string>didSet {
+// Update the view, if already loaded.
+}</string>
+						</dict>
+					</dict>
+				</array>
+				<key>false</key>
+				<array>
+					<dict>
+						<key>Nodes</key>
+						<array>
+							<string>Base.lproj/MainMenu.xib</string>
+							<string>Info.plist:MainNib</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>Base.lproj/MainMenu.xib</key>
+							<dict>
+								<key>Path</key>
+								<string>MainMenuApp.xib</string>
+								<key>SortOrder</key>
+								<integer>101</integer>
+							</dict>
+							<key>Info.plist:MainNib</key>
+							<string>&lt;key&gt;NSMainNibFile&lt;/key&gt;
+                                &lt;string&gt;MainMenu&lt;/string&gt;
+                            </string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
