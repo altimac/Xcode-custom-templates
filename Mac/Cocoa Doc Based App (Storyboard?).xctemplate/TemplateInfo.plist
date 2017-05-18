@@ -81,6 +81,10 @@
 							<string>Document.m:implementation:methods:windowControllerDidLoadNib:comments</string>
 							<string>Document.m:implementation:methods:autosavesInPlace(+ (BOOL\)autosavesInPlace)</string>
 							<string>Document.m:implementation:methods:autosavesInPlace:code</string>
+							<string>Document.m:implementation:methods:dataOfTypeError(- (NSData *\)dataOfType:(NSString *\)typeName error:(NSError **\)outError)</string>
+							<string>Document.m:implementation:methods:dataOfTypeError:code</string>
+							<string>Document.m:implementation:methods:readFromURLOfTypeError(- (BOOL\)readFromURL:(NSURL *\)URL ofType:(NSString *\)type error:(NSError **\)error)</string>
+							<string>Document.m:implementation:methods:readFromURLOfTypeError:code</string>
 						</array>
 						<key>Definitions</key>
 						<dict>
@@ -91,7 +95,11 @@
 							<key>Document.m:implementation:methods:windowControllerDidLoadNib:comments</key>
 							<string>// Add any code here that needs to be executed once the windowController has loaded the document&apos;s window.</string>
 							<key>Document.m:implementation:methods:autosavesInPlace:code</key>
-							<string>return YES;</string>
+							<string>return NO; // YES for autosaving</string>
+							<key>Document.m:implementation:methods:dataOfTypeError:code</key>
+							<string>return nil; // should be implemented to save</string>
+							<key>Document.m:implementation:methods:readFromURLOfTypeError:code</key>
+							<string>return NO; // should be implemented to read from a saved document</string>
 						</dict>
 					</dict>
 					<dict>

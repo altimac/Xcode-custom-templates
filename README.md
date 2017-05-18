@@ -22,9 +22,9 @@ I would not advise using this template to build an app that you'll maintain in t
 # Cocoa Doc Based App (Storyboard?) template:
 Install in `~/Library/Developer/Xcode/Templates/Project Templates/Mac/Application/`
 - Basically the Cocoa Application template from Xcode 7.1.1
-- Document Based Application checkbox!
+- Document Based Application checkbox! (autosavesInPlace set to NO)
 - No default Storyboard (use MainMenu.xib instead), but a checkbox is available!
-- Autolayout set by default
+- No Autolayout set by default
 - ObjC and Swift compatible
 - Xcode 8.3 compatible
 
